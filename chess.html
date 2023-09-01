@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>chess</title>
+        <meta charset="UTF-8">
+        <style>
+            h1{
+              color: rgb(46, 88, 139);  text-align: center;font-size: 50px;
+            }
+            .chess-board {  border-collapse: collapse; }
+            .chess-board th { padding: 10px; font-size: 25px; }
+            .chess-board td { border: 2px azure; width: 90px; height: 90px; text-align: center; font-size: 50px;  }
+            .chess-board .light { background: rgba(176, 196, 222, 0.856); }
+            .chess-board .dark { background: rgba(255, 255, 255, 0.856); }
+            td:hover{ transform: scale(1.2,1.1);}
+        </style>
+        <style>
+            .chess-board{
+                margin-left: 150px;
+            }
+        </style>
+    </head>
+    <body>
+        <style>
+            body{
+                background-image: url(https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hlc3MlMjBib2FyZHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-attachment: fixed;
+            }
+        </style>
+        <h1> &#9812 CHESSGAME &#9813 </h1>
+        <table class="chess-board">
+            <tbody>
+                <tr>
+                    <th></th>    
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                    <th>D</th>
+                    <th>E</th>
+                    <th>F</th>
+                    <th>G</th>
+                    <th>H</th>
+                </tr>
+                <tr>
+                    <th>8</th>
+                    <td class="light">&#9814</td>
+                    <td class="dark">&#9815</td>
+                    <td class="light">&#9815</td>
+                    <td class="dark">&#9812</td>
+                    <td class="light">&#9813</td>
+                    <td class="dark">&#9815</td>
+                    <td class="light">&#9815</td>
+                    <td class="dark">&#9814</td>
+                    <th><i>1</i></th>
+                </tr>
+                <tr>
+                    <th>7</th>
+                    <td class="dark">&#9817</td>
+                    <td class="light">&#9817</td>
+                    <td class="dark">&#9817</td>
+                    <td class="light">&#9817</td>
+                    <td class="dark">&#9817</td>
+                    <td class="light">&#9817</td>
+                    <td class="dark">&#9817</td>
+                    <td class="light">&#9817</td>
+                    <th><i>2</i></th>
+                </tr>
+                <tr>
+                    <th>6</th>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <th><i>3</i></th>
+                </tr>
+                <tr>
+                    <th>5</th>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <th><i>4</i></th>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <th><i>5</i></th>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <td class="dark"></td>
+                    <td class="light"></td>
+                    <th><i>6</i></th>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td class="light">&#9823</td>
+                    <td class="dark">&#9823</td>
+                    <td class="light">&#9823</td>
+                    <td class="dark">&#9823</td>
+                    <td class="light">&#9823</td>
+                    <td class="dark">&#9823</td>
+                    <td class="light">&#9823</td>
+                    <td class="dark">&#9823</td>
+                    <th><i>7</i></th>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <td class="dark">&#9820</td>
+                    <td class="light">&#9822</td>
+                    <td class="dark">&#9821</td>
+                    <td class="light">&#x265A</td>
+                    <td class="dark">&#9819</td>
+                    <td class="light">&#9821</td>
+                    <td class="dark">&#9822</td>
+                    <td class="light">&#9820</td>
+                    <th><i>8</i></th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th><i>H</i></th>
+                    <th><i>G</i></th>
+                    <th><i>F</i></th>
+                    <th><i>E</i></th>
+                    <th><i>D</i></th>
+                    <th><i>C</i></th>
+                    <th><i>B</i></th>
+                    <th><i>A</i></th>
+                </tr>
+            </tbody>
+        </table>
+        <h2>DISCLAIMER:</h2>
+        <p>Chess is a board game for two players, called White and Black, each controlling an army of chess pieces in their color, with the objective to checkmate the opponent's king. 
+            It is sometimes called international chess or Western chess to distinguish it from related games such as xiangqi (Chinese chess) and shogi (Japanese chess).
+            The recorded history of chess goes back at least to the emergence of a similar game, chaturanga, in seventh century India.
+            The rules of chess as they are known today emerged in Europe at the end of the 15th century, with standardization and universal acceptance by the end of the 19th century. 
+            Today, chess is one of the world's most popular games played by millions of people worldwide.</p>
+</body>
+</html>
